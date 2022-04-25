@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/tienda', function () {return view('tienda',['productos' => \App\Models\Producto::all()]);})->name('tienda');
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', function () {return view('dashboard');})->name('dashboard');
-    Route::get('/tienda', function () {return view('tienda');})->name('tienda');
+    Route::get('productos', \App\Http\Livewire\Productos\ListaProductos::class)->name('productos');
 });
