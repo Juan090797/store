@@ -8,7 +8,7 @@ use Livewire\Component;
 class ListaProductos extends Component
 {
     public $productos;
-    public $selected_id = 0;
+    public $selected_id,$modal;
     public $state = [];
 
     public function render()
@@ -18,12 +18,13 @@ class ListaProductos extends Component
     }
     public function abrirModal()
     {
-        $this->selected_id = 2;
+        $this->modal = true;
     }
     public function resetUI()
     {
         $this->state = [];
         $this->selected_id = 0;
+        $this->modal =false;
     }
     public function update()
     {
