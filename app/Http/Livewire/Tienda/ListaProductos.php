@@ -21,6 +21,6 @@ class ListaProductos extends Component
     }
     public function productos()
     {
-        $this->productos  = Producto::all();
+        $this->productos  = Producto::where('estado','ACTIVO')->get();
     }
 }

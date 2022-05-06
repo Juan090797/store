@@ -1,6 +1,6 @@
 <div>
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="{{ asset('plugins/img/breadcrumb.jpg') }}">
+    <section class="breadcrumb-section set-bg" data-setbg="{{ asset('plugins/img/breadcrumb5.jpg') }}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -8,7 +8,7 @@
                         <h2>{{$producto->nombre}}</h2>
                         <div class="breadcrumb__option">
                             <a href="{{url('/tienda')}}">Tienda</a>
-                            <a href="#">Vegetables</a>
+                            <a href="javascript:void(0)">Tecnologia</a>
                             <span>{{$producto->nombre}}</span>
                         </div>
                     </div>
@@ -23,18 +23,17 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="product__details__pic">
                         <div class="product__details__pic__item">
-                            <img class="product__details__pic__item--large"
-                                 src="{{ asset("/storage/productos/$producto->imagen") }}" alt="">
+                            <img class="product__details__pic__item--large" src="{{ asset("/storage/productos/$producto->imagen") }}" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="{{ asset('plugins/img/product/details/product-details-2.jpg') }}"
-                                 src="{{ asset('plugins/img/product/details/thumb-1.jpg') }}" alt="">
-                            <img data-imgbigurl="{{ asset('plugins/img/product/details/product-details-3.jpg') }}"
-                                 src="{{ asset('plugins/img/product/details/thumb-2.jpg') }}" alt="">
-                            <img data-imgbigurl="{{ asset('plugins/img/product/details/product-details-5.jpg') }}"
-                                 src="{{ asset('plugins/img/product/details/thumb-3.jpg') }}" alt="">
-                            <img data-imgbigurl="{{ asset('plugins/img/product/details/product-details-4.jpg') }}"
-                                 src="{{ asset('plugins/img/product/details/thumb-4.jpg') }}" alt="">
+                            <img data-imgbigurl="{{ asset("/storage/productos/$producto->imagen") }}"
+                                 src="{{ asset('plugins/img/product/details/thumb1.jpg') }}" alt="">
+                            <img data-imgbigurl="{{ asset("/storage/productos/$producto->imagen") }}"
+                                 src="{{ asset('plugins/img/product/details/thumb2.jpg') }}" alt="">
+                            <img data-imgbigurl="{{ asset("/storage/productos/$producto->imagen") }}"
+                                 src="{{ asset('plugins/img/product/details/thumb1.jpg') }}" alt="">
+                            <img data-imgbigurl="{{ asset("/storage/productos/$producto->imagen") }}"
+                                 src="{{ asset('plugins/img/product/details/thumb2.jpg') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -58,20 +57,20 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="primary-btn">ADD TO CARD</a>
-                        <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                        <a href="javascript:void(0)" class="primary-btn">Agregar</a>
+                        <a href="javascript:void(0)" class="heart-icon"><span class="icon_heart_alt"></span></a>
                         <ul>
                             <li><b>Disponibilidad</b> <span>Con Stock</span></li>
                             <li><b>Envío</b> <span>01 día de envío</span></li>
                             <li><b>Peso</b> <span>0.5 kg</span></li>
-                            <li><b>Compartir</b>
+                            <!--<li><b>Compartir</b>
                                 <div class="share">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                     <a href="#"><i class="fa fa-pinterest"></i></a>
                                 </div>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>

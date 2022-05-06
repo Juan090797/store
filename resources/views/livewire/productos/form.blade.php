@@ -32,8 +32,8 @@
                             <label for="estado">Estado</label>
                             <select id="estado" class="form-control" wire:model.defer="state.estado">
                                 <option value="ELEGIR" selected>Elegir</option>
-                                <option value="ACTIVO" >Activo</option>
-                                <option value="INACTIVO" >Bloqueado</option>
+                                <option value="ACTIVO" >ACTIVO</option>
+                                <option value="INACTIVO" >INACTIVO</option>
                             </select>
                         </div>
                         @error('estado') <span class="text-danger er">{{ $message }}</span>@enderror

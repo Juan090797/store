@@ -15,6 +15,7 @@ class ListaProductos extends Component
     public $productos,$nombreArchivo,$imagen;
     public $selected_id;
     public $state = [];
+    protected  $listeners =['deleteRow' => 'borrar'];
 
     public function render()
     {
@@ -100,11 +101,20 @@ class ListaProductos extends Component
         $producto->update([
             'nombre'            => $this->state['nombre'],
             'caracteristicas'   => $this->state['caracteristicas'],
+            'estado'            => $this->state['estado'],
             'precio_venta'      => $this->state['precio_venta'],
             'imagen'            => $this->nombreArchivo,
         ]);
         $this->emit('hide-modal');
         $this->resetUI();
         $this->alert('success', 'Producto actualizado!!',['timerProgressBar' => true]);
+    }
+    public function borrar(Producto $producto)
+    {
+        $producto->update([
+            'estado'    => 'INACTIVO'
+        ]);
+        $this->resetUI();
+        $this->alert('success', 'Producto eliminado!!',['timerProgressBar' => true]);
     }
 }

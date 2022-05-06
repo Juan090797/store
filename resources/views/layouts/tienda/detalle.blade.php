@@ -30,7 +30,7 @@
                                 <a class="nav-link" href="{{url('/tienda')}}">Tienda<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Nostros</a>
+                                <a class="nav-link" href="javascript:void(0)">Nostros</a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
@@ -77,10 +77,10 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="footer__widget">
                             <div class="footer__widget__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="https://www.facebook.com/grupomarquinaperu"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/grupomarquinaperu/"><i class="fa fa-instagram"></i></a>
+                                <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+                                <a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a>
                             </div>
                         </div>
                     </div>
