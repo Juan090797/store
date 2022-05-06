@@ -5,15 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ config('app.name', 'Laravel') }}</title>
-        <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-        <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <script src="https://cdn.tailwindcss.com"></script>
-        @livewireStyles
-        <!-- Scripts -->
+        <link href="{{ asset('plugins/sweetalerts/sweetalert.css') }}" rel="stylesheet" type="text/css" />
         <script src="{{ mix('js/app.js') }}" defer></script>
         <script src="https://kit.fontawesome.com/671709783b.js" crossorigin="anonymous"></script>
+        @livewireStyles
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />
@@ -33,6 +31,9 @@
             </main>
         </div>
         @stack('modals')
+        <script src="{{ asset('plugins/sweetalerts/sweetalerts2.js') }}"></script>
+        <script src="{{ asset('vendor/livewire-alert/livewire-alert.js') }}"></script>
+        <x-livewire-alert::flash />
         @livewireScripts
     </body>
 </html>
